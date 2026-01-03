@@ -78,7 +78,7 @@ pub const ErrFile = 3
 pub const ErrInvalid = 4
 
 // Import C functions
-import "libqdlog.a" as "log" {
+import "libqdlog_static.a" as "log" {
 	fn raw_new( -- logger:ptr)
 	fn raw_free(logger:ptr -- )
 	fn raw_set_level(level:i64 logger:ptr -- )
